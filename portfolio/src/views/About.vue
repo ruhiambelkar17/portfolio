@@ -1,143 +1,72 @@
-<script>
-export default {};
-</script>
+<script></script>
 
 <template>
-  <div class="d-flex justify-content-center mt-5">
-
-    <div class="card green">
-
-        <div >
-            <img class="card-img" src="../assets/images/women_avatar.png" width="70" height="100"/>
+  <div class="row my-6 bg-light">
+    <div class="col-md-12">
+      <div
+        id="about-heading"
+        class="d-flex align-items-center justify-content-center"
+      >
+        <img class="" id="about-img" src="../assets/images/women_avatar.png" />
+        <h1 class="display-1 ms-3">About</h1>
+      </div>
+      <div id="about-content" class="row">
+        <div class="col-md-4 offset-md-1">
+            <h1>I'm a Front End Developer!!</h1>
+          <p>
+            I'm a Frontend Web Developer building the Front-end of Websites and
+            Web Applications that leads to the success of the overall product.
+            Check out some of my work in the Projects section. I also like
+            sharing content related to the stuff that I have learned over the
+            years in Web Development so it can help other people of the Dev
+            Community. Feel free to Connect or Follow me on my Linkedin where I
+            post useful content related to Web Development and Programming I'm
+            open to Job opportunities where I can contribute, learn and grow. If
+            you have a good opportunity that matches my skills and experience
+            then don't hesitate to contact me.
+          </p>
         </div>
-             
-          <div class="additional">
-            
-            <div class="more-info">
-              <h1>Jane Doe</h1>
-              <div class="coords">
-                <span>Group Name</span>
-                <span>Joined January 2019</span>
-              </div>
-              <div class="coords">
-                <span>Position/Role</span>
-                <span>City, Country</span>
-              </div>
-              
-            </div>
-          </div>
-          <div class="general">
-            <h1>Ruhi R. Ambelkar</h1>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce a
-              volutpat mauris, at molestie lacus. Nam vestibulum sodales odio ut
-              pulvinar.
-            </p>
-            
-          </div>
+        <div class="col-md-4 offset-md-1">
+            <h1>My skills</h1>
+            <span class="badge" id="about-badge">Vue JS</span>
+            <span class="badge" id="about-badge">React</span>
+            <span class="badge" id="about-badge">Typescript</span>
+            <span class="badge" id="about-badge">JavaScript</span>
+            <span class="badge" id="about-badge">Node Js</span>
+            <span class="badge" id="about-badge">Rest API</span>
+            <span class="badge" id="about-badge">HTML</span>
+            <span class="badge" id="about-badge">CSS</span>
+            <span class="badge" id="about-badge">SQL</span>
         </div>
+      </div>
+    </div>
   </div>
 </template>
 
-<style scoped>
-
-.card-img {
-    position: absolute;
-    /* border-radius: 50%; */
-    /* border: 5px black solid; */
-    padding: 9px 4px;
-    z-index: 99999999;
-    display: flex;
-    justify-content: left;
-    width: 33%;
-}
-.card {
-  width: 450px;
-  height: 250px;
-  background-color: #fff;
-  background: linear-gradient(#f8f8f8, #fff);
-  box-shadow: 0 8px 16px -8px rgba(0, 0, 0, 0.4);
-  border-radius: 30px;
-  overflow: hidden;
-  position: relative;
-  margin: 1.5rem;
+<style>
+#about-img {
+  height: 300px;
+  width: 300px;
+  background-color: bisque;
+  border: 5px black solid;
+  border-radius: 50%;
 }
 
-.card h1 {
-  text-align: center;
-}
-
-.card .additional {
-  position: absolute;
-  width: 150px;
-  height: 100%;
-  
-  transition: width 0.4s;
-  overflow: hidden;
-  z-index: 2;
-}
-
-.card.green .additional {
-  background: linear-gradient(rgb(4, 46, 49),rgb(4, 46, 49));
-}
-
-.card:hover .additional {
+#about-heading {
+  background-color: rgb(4, 46, 49);
+  height: 100px;
   width: 100%;
-  border-radius: 0 30px 30px 0;
 }
 
-.card .additional .more-info {
-  width: 300px;
-  float: left;
-  position: absolute;
-  left: 150px;
-  height: 100%;
+#about-content {
+  margin-top: 100px;
+  color: rgb(4, 46, 49);
 }
-
-.card .additional .more-info h1 {
-  color: #fff;
-  margin-bottom: 0;
-}
-
-.card.green .additional .more-info h1 {
-  color: #ffffff;
-}
-
-.card .additional .coords {
-  margin: 0 1rem;
-  color: #fff;
-  font-size: 1rem;
-}
-
-.card.green .additional .coords {
-  color: #ffffff;
-}
-
-.card .additional .coords span + span {
-  float: right;
-}
-
-
-
-
-
-
-.card .general {
-  width: 300px;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  right: 0;
-  z-index: 1;
-  box-sizing: border-box;
-  padding: 1rem;
-  padding-top: 0;
-}
-
-.card .general .more {
-  position: absolute;
-  bottom: 1rem;
-  right: 1rem;
-  font-size: 0.9em;
+#about-badge {
+    height: 40px;
+    width: auto;
+    background-color:rgb(148, 205, 209) !important ;
+    font-size: 20px;
+    margin: 10px;
 }
 </style>

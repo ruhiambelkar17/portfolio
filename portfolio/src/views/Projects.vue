@@ -28,6 +28,11 @@ export default {};
                 HTML,CHI Design System(CSS Framework by Lumen) and Vue JS
                 components using Composition API and Typescript.
               </p>
+              <span class="badge rounded-pill bg-light text-dark">Vue JS</span>
+              <span class="badge rounded-pill bg-light text-dark">Typescript</span>
+              <span class="badge rounded-pill bg-light text-dark">HTML</span>
+              <span class="badge rounded-pill bg-light text-dark">CSS</span>
+              <span class="badge rounded-pill bg-light text-dark">REST Api</span>
               <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
               <!-- <ul>
                       <li>Developed Telecom based application from initial design using HTML,CHI Design System(CSS Framework by Lumen) and Vue JS components using Composition API and Typescript. </li>
@@ -62,7 +67,11 @@ export default {};
                 design using Figma, HTML, Bootstrap and Vue JS components using
                 JavaScript.
               </p>
-              
+              <span class="badge rounded-pill bg-light text-dark">Vue JS</span>
+              <span class="badge rounded-pill bg-light text-dark">JavaScript</span>
+              <span class="badge rounded-pill bg-light text-dark">HTML</span>
+              <span class="badge rounded-pill bg-light text-dark">Bootstrap</span>
+              <span class="badge rounded-pill bg-light text-dark">REST Api</span>
             </div>
           </div>
         </div>
@@ -81,7 +90,10 @@ export default {};
               <p class="card-text">
                 Assisted in building user friendly internal web application to manage Database to meet client requirements. 
               </p>
-              
+              <span class="badge rounded-pill bg-light text-dark">Vue JS</span>
+              <span class="badge rounded-pill bg-light text-dark">HTML</span>
+              <span class="badge rounded-pill bg-light text-dark">CSS</span>
+              <span class="badge rounded-pill bg-light text-dark">MySQL</span>
             </div>
           </div>
         </div>
