@@ -29,7 +29,7 @@
         </div>
         <div class="col-md-4 offset-md-1">
             <h1>My skills</h1>
-            <span class="badge" id="about-badge">Vue JS</span>
+            <span class="badge " id="about-badge">Vue JS</span>
             <span class="badge" id="about-badge">React</span>
             <span class="badge" id="about-badge">Typescript</span>
             <span class="badge" id="about-badge">JavaScript</span>

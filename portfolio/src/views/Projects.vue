@@ -28,11 +28,11 @@ export default {};
                 HTML,CHI Design System(CSS Framework by Lumen) and Vue JS
                 components using Composition API and Typescript.
               </p>
-              <span class="badge rounded-pill bg-light text-dark">Vue JS</span>
-              <span class="badge rounded-pill bg-light text-dark">Typescript</span>
-              <span class="badge rounded-pill bg-light text-dark">HTML</span>
-              <span class="badge rounded-pill bg-light text-dark">CSS</span>
-              <span class="badge rounded-pill bg-light text-dark">REST Api</span>
+              <span class="badge rounded-pill   ">Vue JS</span>
+              <span class="badge rounded-pill   ">Typescript</span>
+              <span class="badge rounded-pill  ">HTML</span>
+              <span class="badge rounded-pill  ">CSS</span>
+              <span class="badge rounded-pill  ">REST Api</span>
               <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
               <!-- <ul>
                       <li>Developed Telecom based application from initial design using HTML,CHI Design System(CSS Framework by Lumen) and Vue JS components using Composition API and Typescript. </li>
@@ -67,11 +67,11 @@ export default {};
                 design using Figma, HTML, Bootstrap and Vue JS components using
                 JavaScript.
               </p>
-              <span class="badge rounded-pill bg-light text-dark">Vue JS</span>
-              <span class="badge rounded-pill bg-light text-dark">JavaScript</span>
-              <span class="badge rounded-pill bg-light text-dark">HTML</span>
-              <span class="badge rounded-pill bg-light text-dark">Bootstrap</span>
-              <span class="badge rounded-pill bg-light text-dark">REST Api</span>
+              <span class="badge rounded-pill  ">Vue JS</span>
+              <span class="badge rounded-pill  ">JavaScript</span>
+              <span class="badge rounded-pill  ">HTML</span>
+              <span class="badge rounded-pill  ">Bootstrap</span>
+              <span class="badge rounded-pill  ">REST Api</span>
             </div>
           </div>
         </div>
@@ -90,10 +90,10 @@ export default {};
               <p class="card-text">
                 Assisted in building user friendly internal web application to manage Database to meet client requirements. 
               </p>
-              <span class="badge rounded-pill bg-light text-dark">Vue JS</span>
-              <span class="badge rounded-pill bg-light text-dark">HTML</span>
-              <span class="badge rounded-pill bg-light text-dark">CSS</span>
-              <span class="badge rounded-pill bg-light text-dark">MySQL</span>
+              <span class="badge rounded-pill  ">Vue JS</span>
+              <span class="badge rounded-pill  ">HTML</span>
+              <span class="badge rounded-pill  ">CSS</span>
+              <span class="badge rounded-pill  ">MySQL</span>
             </div>
           </div>
         </div>
@@ -112,5 +112,11 @@ export default {};
 
 p {
   font-size: small;
+}
+
+.badge {
+  background-color:rgb(148, 205, 209) !important ;
+  margin-right: 10px;
+  color: white;
 }
 </style>

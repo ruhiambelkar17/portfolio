@@ -30,10 +30,9 @@ export default {
           class="icon-right-top"
         />
       </div>
-      <div class="d-flex justify-content-center mt-5" id="avatar">
+      <div class="d-flex justify-content-center mt-5" >
         <img
-          width="200px"
-          height="200px"
+        id="avatar"
           src="../assets/images/women_avatar.png"
         />
       </div>
@@ -94,6 +93,14 @@ export default {
 </template>
 
 <style scoped>
+#avatar {
+  height: 250px;
+  width: 250px;
+  background-color: bisque;
+  border: 5px black solid;
+  border-radius: 50%;
+}
+
 @keyframes leftTop {
   0% {
     left: 0px;
