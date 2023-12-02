@@ -1,14 +1,15 @@
 <script></script>
 
 <template>
-  <div class="row my-6 bg-light">
+  <div class="row my-5 bg-light">
     <div class="col-md-12">
       <div
         id="about-heading"
-        class="d-flex align-items-center justify-content-center"
+        class=""
       >
-        <img class="" id="about-img" src="../assets/images/women_avatar.png" />
-        <h1 class="display-1 ms-3">About</h1>
+        <!-- <img class="" id="about-img" src="../assets/images/women_avatar.png" /> -->
+        <h1 class="display-1">About</h1>
+        <p id="about-line"></p>
       </div>
       <div id="about-content" class="row">
         <div class="col-md-4 offset-md-1">
@@ -53,9 +54,17 @@
 }
 
 #about-heading {
-  background-color: rgb(4, 46, 49);
+  /* background-color: rgb(4, 46, 49); */
+  color: rgb(4, 46, 49);
   height: 100px;
   width: 100%;
+}
+
+#about-line {
+    height: 5px;
+    width: 100px;
+    background-color:rgb(148, 205, 209) ;
+    margin-left: 47%;
 }
 
 #about-content {
@@ -65,7 +74,7 @@
 #about-badge {
     height: 40px;
     width: auto;
-    background-color:rgb(148, 205, 209) !important ;
+    background-color:rgb(148, 205, 209) ;
     font-size: 20px;
     margin: 10px;
 }
