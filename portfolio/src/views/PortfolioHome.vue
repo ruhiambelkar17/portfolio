@@ -1,5 +1,6 @@
 <script>
 import Nav from "../components/Nav.vue";
+import Footer from "../components/Footer.vue";
 import Projects from "./Projects.vue";
 import About from "./About.vue";
 
@@ -8,6 +9,7 @@ export default {
     Nav,
     Projects,
     About,
+    Footer
   },
 };
 </script>
@@ -82,7 +84,7 @@ export default {
         </div>
         <Projects />
         <About />
-
+        <Footer />
       </div>
       
     </div>
