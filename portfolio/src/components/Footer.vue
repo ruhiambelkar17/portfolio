@@ -3,7 +3,7 @@
 <template>
   <footer class="footer-container">
     <div class="row pt-5">
-      <div class="col-md-4 offset-md-4">
+      <div class="col-md-4 offset-md-4 text-center">
         <h1>Ruhi Ambelkar</h1>
 
         <p>
@@ -65,7 +65,7 @@
     </div>
   </footer>
 </template>
-<style>
+<style scoped>
 .footer-container {
   background-color: rgb(4, 46, 49);
 
@@ -74,6 +74,7 @@
 
 #footer-icon{
     border: 2px solid white;
+    color:white;
     border-radius: 50%;
     width: 50px;
     height: 50px;

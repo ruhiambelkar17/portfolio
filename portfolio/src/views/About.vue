@@ -1,14 +1,14 @@
 <script></script>
 
 <template>
-  <div class="row my-5 bg-light">
+  <div class="row my-5 bg-light shadow">
     <div class="col-md-12">
       <div
         id="about-heading"
         class=""
       >
         <!-- <img class="" id="about-img" src="../assets/images/women_avatar.png" /> -->
-        <h1 class="display-1">About</h1>
+        <h1 class="display-1 text-center">About</h1>
         <p id="about-line"></p>
       </div>
       <div id="about-content" class="row">
@@ -44,7 +44,7 @@
   </div>
 </template>
 
-<style>
+<style scoped>
 #about-img {
   height: 300px;
   width: 300px;

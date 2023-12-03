@@ -85,11 +85,12 @@ export default {
           </div>
         </div>
         <Projects />
-        <About />
-        <Footer />
-        <Contact />
+        
+        
       </div>
-      
+      <About />
+        <Contact />
+        <Footer />
     </div>
     
    
@@ -183,7 +184,6 @@ export default {
 
 .container-2 {
   background-color: rgb(4, 46, 49);
-
   height: 50vh;
   border-top-left-radius: 50px;
   border-top-right-radius: 50px;

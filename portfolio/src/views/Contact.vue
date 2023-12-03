@@ -1,36 +1,46 @@
 <script></script>
 
 <template>
-  <div class="row">
-    <div class="col-md-8 offset-md-2">
-        <form>
-      <div class="mb-3">
-        <label for="exampleInputEmail1" class="form-label">Email address</label>
-        <input
-          type="email"
-          class="form-control"
-          id="exampleInputEmail1"
-          aria-describedby="emailHelp"
-        />
-        <div id="emailHelp" class="form-text">
-          We'll never share your email with anyone else.
+  <div class="row my-5">
+    <div class="col-md-6 offset-md-3">
+      <div id="contact-heading">        
+        <h1 class="display-1 text-center">Contact Me</h1>        
+      </div>
+      <form class="border rounded p-5 shadow">
+        <div class="mb-3">
+            <label for="name" class="form-label">Name</label>
+            <input type="text" id="name" class="form-control"/>
         </div>
-      </div>
-      <div class="mb-3">
-        <label for="exampleInputPassword1" class="form-label">Password</label>
-        <input
-          type="password"
-          class="form-control"
-          id="exampleInputPassword1"
-        />
-      </div>
-      <div class="mb-3 form-check">
-        <input type="checkbox" class="form-check-input" id="exampleCheck1" />
-        <label class="form-check-label" for="exampleCheck1">Check me out</label>
-      </div>
-      <button type="submit" class="btn btn-primary">Submit</button>
-    </form>
+        <div class="mb-3">
+            <label for="name" class="form-label">Email</label>
+            <input type="text" id="name" class="form-control"/>
+        </div>
+        <div class="mb-3">
+            <label for="name" class="form-label">Messase</label>
+            <textarea rows="4" id="name" class="form-control" />
+        </div>
+        <div class="d-flex justify-content-center mt-4">
+            <input class="btn btn-primary" type="submit" value="Submit">
+        </div>
+        
+      </form>
     </div>
   </div>
 </template>
-<style></style>
+<style scoped>
+#contact-heading {
+  color: rgb(4, 46, 49);
+  
+}
+
+form {
+    color: rgb(4, 46, 49);
+    background-color:rgb(148, 205, 209) !important ;
+}
+
+.btn {
+    background-color:rgb(4, 46, 49) ;
+    border-color: rgb(4, 46, 49);
+    width: 200px;
+}
+</style>
