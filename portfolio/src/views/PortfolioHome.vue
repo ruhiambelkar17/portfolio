@@ -3,13 +3,15 @@ import Nav from "../components/Nav.vue";
 import Footer from "../components/Footer.vue";
 import Projects from "./Projects.vue";
 import About from "./About.vue";
+import Contact from "./Contact.vue";
 
 export default {
   components: {
     Nav,
     Projects,
     About,
-    Footer
+    Footer,
+    Contact
   },
 };
 </script>
@@ -85,6 +87,7 @@ export default {
         <Projects />
         <About />
         <Footer />
+        <Contact />
       </div>
       
     </div>
