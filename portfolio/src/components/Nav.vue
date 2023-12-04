@@ -1,6 +1,16 @@
 <script>
 export default{
-
+  data(){
+    return {
+      scrollToPage:""
+    }
+  },
+  methods: {
+    scrollToAbout() {
+      this.scrollToPage="about-me",
+      this.$emit("scrollToAbout", this.scrollToPage);
+    },
+  },
 }
 </script>
 
@@ -25,13 +35,13 @@ export default{
 
           <ul class="navbar-nav justify-content-end me-5">
             <li class="nav-item p-3">
-              <a class="nav-link" href="#">Home</a>
+              <a class="nav-link" href="#" >Home</a>
             </li>
             <li class="nav-item p-3">
               <a class="nav-link" href="#">Projects</a>
             </li>
             <li class="nav-item p-3">
-              <a class="nav-link" href="#">About</a>
+              <a class="nav-link" href="#" @click="scrollToAbout">About</a>
             </li>
             <li class="nav-item p-3">
               <a class="nav-link" href="#">Contact</a>

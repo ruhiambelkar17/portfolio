@@ -15,21 +15,26 @@ export default {
   },
   data(){
     return {
-
+      scrollToSection:"contact-me"
     }
   },
   methods: {
     scrollTo() {
-      const element = document.getElementById('contact-me');
+      this.scrollToSection=this.scrollToPage;
+      const element = document.getElementById(this.scrollToSection);
       element.scrollIntoView({ behavior: 'smooth' });
-    }
+    },
+    // scrollToSection() {
+    //   const element = document.getElementById(thos.scrollToPage);
+    //   element.scrollIntoView({ behavior: 'smooth' });
+    // },
   }
 };
 </script>
 
 <template>
   <div>
-    <Nav />
+    <Nav @scrollToAbout="scrollTo" />
     <div class="container-1">
       <div class="d-flex justify-content-between">
         <img
@@ -65,7 +70,7 @@ export default {
           class="icon-right-bottom"
         />
       </div>
-      <h1 class="text-center text-style">Front-End Web Developer</h1>
+      <h1 class="text-center text-style">Front-End Web Developer {{ scrollToSection }}</h1>
       <div class="row text-center text-style">
         <div class="col-md-6 offset-md-3">
           <p>
@@ -101,7 +106,7 @@ export default {
       </div>
       <About />
         <Contact id="contact-me" />
-        <Footer />
+        <Footer id="about-me"/>
     </div>
     
    
