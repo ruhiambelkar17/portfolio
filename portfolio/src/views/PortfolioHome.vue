@@ -15,12 +15,12 @@ export default {
   },
   data(){
     return {
-      scrollToSection:"contact-me"
+      scrollToSection:""
     }
   },
   methods: {
-    scrollTo() {
-      this.scrollToSection=this.scrollToPage;
+    scrollTo(scrollToPage) {
+      this.scrollToSection=scrollToPage;
       const element = document.getElementById(this.scrollToSection);
       element.scrollIntoView({ behavior: 'smooth' });
     },
@@ -78,7 +78,7 @@ export default {
             experience in creating Mobile responsive web applications.
           </p>
           <div class="d-flex justify-content-center">
-            <button class="btn border button-style" @click="scrollTo">Contact Me</button>
+            <button class="btn border button-style" @click="scrollTo( 'contact-me')">Contact Me</button>
           </div>
         </div>
       </div>
@@ -104,9 +104,9 @@ export default {
         
         
       </div>
-      <About />
+      <About id="about-me" />
         <Contact id="contact-me" />
-        <Footer id="about-me"/>
+        <Footer />
     </div>
     
    
