@@ -6,7 +6,7 @@ export default{
 
 <template>
     <div>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary shadow fixed-top">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary shadow ">
         <div class="container-fluid">
           <a class="navbar-brand ms-5 text-style" href="#"
             >Ruhi Ramakant Ambelkar</a

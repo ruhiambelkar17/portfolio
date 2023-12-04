@@ -13,6 +13,17 @@ export default {
     Footer,
     Contact
   },
+  data(){
+    return {
+
+    }
+  },
+  methods: {
+    scrollTo() {
+      const element = document.getElementById('contact-me');
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
 };
 </script>
 
@@ -62,7 +73,7 @@ export default {
             experience in creating Mobile responsive web applications.
           </p>
           <div class="d-flex justify-content-center">
-            <button class="btn border button-style">Contact Me</button>
+            <button class="btn border button-style" @click="scrollTo">Contact Me</button>
           </div>
         </div>
       </div>
@@ -89,7 +100,7 @@ export default {
         
       </div>
       <About />
-        <Contact />
+        <Contact id="contact-me" />
         <Footer />
     </div>
     
