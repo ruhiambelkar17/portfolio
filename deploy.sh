@@ -10,5 +10,5 @@ cd dist
 git init
 git add -A
 git commit -m 'deploy'
-git push
+git push -f ssh -o StrictHostKeyChecking=no git@github.com:ruhiambelkar17/portfolio.git master:gh-pages
 cd -
