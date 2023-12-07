@@ -1,4 +1,15 @@
-<script></script>
+<script>
+
+export default {
+    data(){
+        return {
+            name:"",
+            email:"",
+            message:""
+        }
+    }
+}
+</script>
 
 <template>
   <div class="row my-5">
@@ -9,15 +20,15 @@
       <form class="border rounded p-5 shadow">
         <div class="mb-3">
             <label for="name" class="form-label">Name</label>
-            <input type="text" id="name" class="form-control"/>
+            <input type="text" id="name" class="form-control" v-model="name"/>
         </div>
         <div class="mb-3">
             <label for="name" class="form-label">Email</label>
-            <input type="text" id="name" class="form-control"/>
+            <input type="text" id="name" class="form-control" v-mode="email"/>
         </div>
         <div class="mb-3">
             <label for="name" class="form-label">Messase</label>
-            <textarea rows="4" id="name" class="form-control" />
+            <textarea rows="4" id="name" class="form-control" v-mode="message" />
         </div>
         <div class="d-flex justify-content-center mt-4">
             <input class="btn btn-primary" type="submit" value="Submit">
