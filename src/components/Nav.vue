@@ -45,7 +45,7 @@ export default{
               <a class="nav-link" href="#" @click="scrollTo('about-me')">About</a>
             </li>
             <li class="nav-item p-3">
-              <a class="nav-link" href="#">Contact</a>
+              <a class="nav-link" href="#" @click="scrollTo('contact-me')">Contact</a>
             </li>
           </ul>
         </div>

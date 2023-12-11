@@ -79,7 +79,7 @@ export default {
             experience in creating Mobile responsive web applications.
           </p>
           <div class="d-flex justify-content-center">
-            <button class="btn border button-style" @click="scrollTo( 'contact-me')">Contact Me</button>
+            <button class="btn border button-style" @click="scrollToView('contact-me')">Contact Me</button>
           </div>
         </div>
       </div>
