@@ -19,7 +19,8 @@ export default {
     }
   },
   methods: {
-    scrollTo(scrollToPage) {
+    scrollToView(scrollToPage) {
+      console.log("scrollToPage",scrollToPage)
       this.scrollToSection=scrollToPage;
       const element = document.getElementById(this.scrollToSection);
       element.scrollIntoView({ behavior: 'smooth' });
@@ -34,7 +35,7 @@ export default {
 
 <template>
   <div>
-    <Nav @scrollToAbout="scrollTo" />
+    <Nav @scrollTo="scrollToView" />
     <div class="container-1">
       <div class="d-flex justify-content-between">
         <img
@@ -100,7 +101,7 @@ export default {
             </p>
           </div>
         </div>
-        <Projects />
+        <Projects id="projects"/>
         
         
       </div>
