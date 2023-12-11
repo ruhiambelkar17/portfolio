@@ -202,7 +202,8 @@ export default {
 }
 
 .button-style {
-  background-color: rgb(4, 46, 49);
+  background: rgb(2,0,36);
+  background: linear-gradient(-130deg, rgba(2,0,36,1) 0%, rgba(4,46,49,1) 45%, rgba(0,212,255,1) 100%);
   color: white;
 }
 
