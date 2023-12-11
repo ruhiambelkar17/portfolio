@@ -71,7 +71,7 @@ export default {
           class="icon-right-bottom"
         />
       </div>
-      <h1 class="text-center text-style">Front-End Web Developer {{ scrollToSection }}</h1>
+      <h1 class="text-center text-style pg-heading">Front-End Web Developer {{ scrollToSection }}</h1>
       <div class="row text-center text-style">
         <div class="col-md-6 offset-md-3">
           <p>
@@ -116,6 +116,13 @@ export default {
 </template>
 
 <style scoped>
+.pg-heading {
+  
+  background: -webkit-linear-gradient(141deg, rgba(2,0,36,1) 0%, rgba(4,46,49,1) 25%, rgba(0,212,255,1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 #avatar {
   height: 250px;
   width: 250px;

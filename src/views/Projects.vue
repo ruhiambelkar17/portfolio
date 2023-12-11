@@ -7,7 +7,7 @@ export default {};
     <div class="col-md-10 offset-md-1 projects-container shadow">
       <div class="d-inline-flex">
         <img src="../assets/images/work.png" width="150px" height="150px" />
-        <h1 class="my-5">Clients I worked with</h1>
+        <h1 class="my-5 pg-heading">Clients I worked with</h1>
       </div>
       
       <div class="row">
@@ -103,6 +103,12 @@ export default {};
 </template>
 
 <style scoped>
+.pg-heading {
+  
+  background: -webkit-linear-gradient(141deg, rgba(2,0,36,1) 0%, rgba(4,46,49,1) 25%, rgba(0,212,255,1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 .projects-container {
   background-color: white;
   height: 100vh;

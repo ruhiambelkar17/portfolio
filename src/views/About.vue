@@ -8,7 +8,7 @@
         class=""
       >
         <!-- <img class="" id="about-img" src="../assets/images/women_avatar.png" /> -->
-        <h1 class="display-1 text-center">About</h1>
+        <h1 class="display-1 text-center pg-heading">About</h1>
         <p id="about-line"></p>
       </div>
       <div id="about-content" class="row">
@@ -45,6 +45,13 @@
 </template>
 
 <style scoped>
+.pg-heading {
+  
+  background: -webkit-linear-gradient(141deg, rgba(2,0,36,1) 0%, rgba(4,46,49,1) 25%, rgba(0,212,255,1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 #about-img {
   height: 300px;
   width: 300px;

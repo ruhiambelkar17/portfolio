@@ -58,8 +58,11 @@ export default {
 </template>
 <style scoped>
 #contact-heading {
-  color: rgb(4, 46, 49);
+  background: -webkit-linear-gradient(141deg, rgba(2,0,36,1) 0%, rgba(4,46,49,1) 25%, rgba(0,212,255,1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
+
 
 form {
   color: rgb(4, 46, 49);
