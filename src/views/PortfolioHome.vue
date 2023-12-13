@@ -51,8 +51,8 @@ export default {
           class="icon-right-top"
         />
       </div>
-      <div class="d-flex justify-content-center mt-5" >
-        <img
+      <div class="d-flex justify-content-center mt-2" >
+        <img class="shadow"
         id="avatar"
           src="../assets/images/women_avatar.png"
         />
@@ -75,7 +75,7 @@ export default {
       <div class="row text-center text-style">
         <div class="col-md-6 offset-md-3">
           <p>
-            I am an Experienced Front End Web developer with 4+ years of
+            I am an Experienced Front End Web developer with 5 years of
             experience in creating Mobile responsive web applications.
           </p>
           <div class="d-flex justify-content-center">
@@ -85,7 +85,7 @@ export default {
       </div>
     </div>
     <div class="d-flex justify-content-center mt-5 mb-0">
-      <img width="700px" src="../assets/images/web-design-1.png" />
+      <img width="700" src="../assets/images/web-design-1.png" />
     </div>
     <div class="container-2">
       <div class="text-center pt-5">
