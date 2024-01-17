@@ -93,7 +93,7 @@ export default {
         <div class="row text-center">
           <div class="col-md-6 offset-md-3">
             <p>
-              I am a passionate Front End Developer with 4+ years of experience
+              I am a passionate Front End Developer with 5 years of experience
               in designing, developing, testing and maintaining mobile
               responsive web applications. Adept in contributing to highly
               collaborative work environment, finding solutions and determining

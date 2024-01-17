@@ -11,7 +11,7 @@
         <h1 class="display-1 text-center pg-heading">About</h1>
         <p id="about-line"></p>
       </div>
-      <div id="about-content" class="row mt-5 mb-5">
+      <div id="about-content" class="row my-5 mx-3">
         <div class="col-md-4 offset-md-1">
             <h1>I'm a Front End Developer!!</h1>
           <p>
@@ -67,12 +67,12 @@
   width: 100%;
 }
 
-#about-line {
+/* #about-line {
     height: 5px;
     width: 100px;
     background-color:rgb(148, 205, 209) ;
     margin-left: 47%;
-}
+} */
 
 #about-content {
   margin-top: 100px;

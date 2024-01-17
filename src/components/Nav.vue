@@ -34,7 +34,8 @@ export default{
             <span class="navbar-toggler-icon"></span>
           </button>
 
-          <ul class="navbar-nav justify-content-end me-5">
+          <div class="collapse navbar-collapse justify-content-end " id="navbarSupportedContent">
+            <ul class="navbar-nav ms-5">
             <li class="nav-item p-3">
               <a class="nav-link" href="#" >Home</a>
             </li>
@@ -48,6 +49,7 @@ export default{
               <a class="nav-link" href="#" @click="scrollTo('contact-me')">Contact</a>
             </li>
           </ul>
+          </div>
         </div>
       </nav>
     </div>

@@ -3,16 +3,16 @@ export default {};
 </script>
 
 <template>
-  <div class="row mt-5">
-    <div class="col-md-10 offset-md-1 projects-container shadow">
+  <div class="row mt-5 mx-3">
+    <div class="col-md-10 offset-md-1 projects-container vh-80 shadow">
       <div class="d-inline-flex">
         <img src="../assets/images/work.png" width="150px" height="150px" />
         <h1 class="my-5 pg-heading">Clients I worked with</h1>
       </div>
       
-      <div class="row mx-5">
+      <div class="row mx-3 mb-5">
         <div class="col-md-4 mt-5">
-          <div class="card shadow border-0">
+          <div class="card  border-0" style="border-radius: 50px;">
             <img
               src="../assets/images/Lumen_Technologies_Logo.png"
               class="mx-auto d-block"
@@ -21,7 +21,7 @@ export default {};
               width="100px"
             />
 
-            <div class="card-body">
+            <div class="card-body" >
               <h5 class="card-title">Vue JS End Developer</h5>
               <p class="card-text">
                 Developed Telecom based application from initial design using
@@ -51,7 +51,7 @@ export default {};
           </div>
         </div>
         <div class="col-md-4 mt-5">
-          <div class="card shadow border-0">
+          <div class="card  border-0" style="border-radius: 50px;">
             <img
               src="../assets/images/Telenor-logo.png"
               alt="Telenor"
@@ -76,7 +76,7 @@ export default {};
           </div>
         </div>
         <div class="col-md-4 mt-5">
-          <div class="card shadow border-0">
+          <div class="card  border-0" style="border-radius: 50px;">
             <img
               src="../assets/images/Caterpillar-Logo.png"
               class="mx-auto d-block"
@@ -112,7 +112,7 @@ export default {};
 }
 .projects-container {
   background-color: white;
-  height: 80vh;
+
   border-radius: 50px;
   color: rgb(4, 46, 49);
 }
