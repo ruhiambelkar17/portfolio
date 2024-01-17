@@ -11,7 +11,7 @@
         <h1 class="display-1 text-center pg-heading">About</h1>
         <p id="about-line"></p>
       </div>
-      <div id="about-content" class="row">
+      <div id="about-content" class="row mt-5 mb-5">
         <div class="col-md-4 offset-md-1">
             <h1>I'm a Front End Developer!!</h1>
           <p>

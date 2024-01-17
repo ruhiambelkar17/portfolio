@@ -10,9 +10,9 @@ export default {};
         <h1 class="my-5 pg-heading">Clients I worked with</h1>
       </div>
       
-      <div class="row">
+      <div class="row mx-5">
         <div class="col-md-4 mt-5">
-          <div class="card">
+          <div class="card shadow border-0">
             <img
               src="../assets/images/Lumen_Technologies_Logo.png"
               class="mx-auto d-block"
@@ -51,7 +51,7 @@ export default {};
           </div>
         </div>
         <div class="col-md-4 mt-5">
-          <div class="card">
+          <div class="card shadow border-0">
             <img
               src="../assets/images/Telenor-logo.png"
               alt="Telenor"
@@ -76,7 +76,7 @@ export default {};
           </div>
         </div>
         <div class="col-md-4 mt-5">
-          <div class="card">
+          <div class="card shadow border-0">
             <img
               src="../assets/images/Caterpillar-Logo.png"
               class="mx-auto d-block"
@@ -89,6 +89,7 @@ export default {};
               <h5 class="card-title">Front End Developer</h5>
               <p class="card-text">
                 Assisted in building user friendly internal web application to manage Database to meet client requirements. 
+                Developed web pages using HTML,CSS,JavaScript and jQuery.
               </p>
               <span class="badge rounded-pill  ">Vue JS</span>
               <span class="badge rounded-pill  ">HTML</span>
@@ -111,7 +112,7 @@ export default {};
 }
 .projects-container {
   background-color: white;
-  height: 100vh;
+  height: 80vh;
   border-radius: 50px;
   color: rgb(4, 46, 49);
 }
