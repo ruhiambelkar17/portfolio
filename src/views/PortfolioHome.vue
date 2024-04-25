@@ -27,10 +27,8 @@ export default {
       const element = document.getElementById(this.scrollToSection);
       element.scrollIntoView({ behavior: "smooth" });
     },
-    // scrollToSection() {
-    //   const element = document.getElementById(thos.scrollToPage);
-    //   element.scrollIntoView({ behavior: 'smooth' });
-    // },
+    
+
   },
 };
 </script>
