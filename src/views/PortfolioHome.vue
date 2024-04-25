@@ -11,31 +11,34 @@ export default {
     Projects,
     About,
     Footer,
-    Contact
+    Contact,
   },
-  data(){
+  data() {
     return {
-      scrollToSection:""
-    }
+      scrollToSection: "",
+      isArr: true,
+      arr: [1, 2, 3, 4, 5],
+    };
   },
   methods: {
     scrollToView(scrollToPage) {
-      console.log("scrollToPage",scrollToPage)
-      this.scrollToSection=scrollToPage;
+      console.log("scrollToPage", scrollToPage);
+      this.scrollToSection = scrollToPage;
       const element = document.getElementById(this.scrollToSection);
-      element.scrollIntoView({ behavior: 'smooth' });
+      element.scrollIntoView({ behavior: "smooth" });
     },
     // scrollToSection() {
     //   const element = document.getElementById(thos.scrollToPage);
     //   element.scrollIntoView({ behavior: 'smooth' });
     // },
-  }
+  },
 };
 </script>
 
 <template>
   <div>
     <Nav @scrollTo="scrollToView" />
+
     <div class="container-1">
       <div class="d-flex justify-content-between">
         <img
@@ -51,9 +54,10 @@ export default {
           class="icon-right-top"
         />
       </div>
-      <div class="d-flex justify-content-center mt-2" >
-        <img class="shadow"
-        id="avatar"
+      <div class="d-flex justify-content-center mt-2">
+        <img
+          class="shadow"
+          id="avatar"
           src="../assets/images/women_avatar.png"
         />
       </div>
@@ -71,7 +75,9 @@ export default {
           class="icon-right-bottom"
         />
       </div>
-      <h1 class="text-center text-style pg-heading">Front-End Web Developer {{ scrollToSection }}</h1>
+      <h1 class="text-center text-style pg-heading">
+        Front-End Web Developer {{ scrollToSection }}
+      </h1>
       <div class="row text-center text-style">
         <div class="col-md-6 offset-md-3">
           <p>
@@ -79,7 +85,12 @@ export default {
             experience in creating Mobile responsive web applications.
           </p>
           <div class="d-flex justify-content-center">
-            <button class="btn border button-style" @click="scrollToView('contact-me')">Contact Me</button>
+            <button
+              class="btn border button-style"
+              @click="scrollToView('contact-me')"
+            >
+              Contact Me
+            </button>
           </div>
         </div>
       </div>
@@ -101,24 +112,23 @@ export default {
             </p>
           </div>
         </div>
-        <Projects id="projects"/>
-        
-        
+        <Projects id="projects" />
       </div>
       <About id="about-me" />
-        <Contact id="contact-me" />
-        <Footer />
+      <Contact id="contact-me" />
+      <Footer />
     </div>
-    
-   
-    
   </div>
 </template>
 
 <style scoped>
 .pg-heading {
-  
-  background: -webkit-linear-gradient(141deg, rgba(2,0,36,1) 0%, rgba(4,46,49,1) 25%, rgba(0,212,255,1) 100%);
+  background: -webkit-linear-gradient(
+    141deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(4, 46, 49, 1) 25%,
+    rgba(0, 212, 255, 1) 100%
+  );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -202,8 +212,13 @@ export default {
 }
 
 .button-style {
-  background: rgb(2,0,36);
-  background: linear-gradient(-130deg, rgba(2,0,36,1) 0%, rgba(4,46,49,1) 45%, rgba(0,212,255,1) 100%);
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    -130deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(4, 46, 49, 1) 45%,
+    rgba(0, 212, 255, 1) 100%
+  );
   color: white;
 }
 
