@@ -94,7 +94,7 @@ export default {
       </div>
     </div>
     <div class="d-flex justify-content-center mt-5 mb-0">
-      <img width="700" src="../assets/images/web-design-1.png" />
+      <img width="700" class="img-fluid" src="../assets/images/web-design-1.png" />
     </div>
     <div class="container-2">
       <div class="text-center pt-5">
