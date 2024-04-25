@@ -7,7 +7,7 @@
         <h1>Ruhi Ambelkar</h1>
 
         <p>
-          Passionate Front End Developer with 5 years of experience in
+          Passionate Front End Developer with 5+ years of experience in
           designing, developing, testing and maintaining mobile responsive web
           applications. Adept in contributing to highly collaborative work
           environment, finding solutions and determining customer satisfaction.

@@ -79,7 +79,7 @@ export default {
       <div class="row text-center text-style">
         <div class="col-md-6 offset-md-3">
           <p>
-            I am an Experienced Front End Web developer with 5 years of
+            I am an Experienced Front End Web developer with 5+ years of
             experience in creating Mobile responsive web applications.
           </p>
           <div class="d-flex justify-content-center">
