@@ -1,5 +1,5 @@
 <script>
-import  Email  from "@/assets/smtp/smtp.js";
+import Email from "@/assets/smtp/smtp.js";
 
 export default {
   data() {
@@ -7,18 +7,25 @@ export default {
       name: "",
       email: "",
       message: "",
-      subject:"",
     };
   },
   methods: {
     sendMail() {
-        console.log("email:",this.email,"Name:",this.name,"subj:",this.subject,"msg:",this.message);
+      console.log(
+        "email:",
+        this.email,
+        "Name:",
+        this.name,
+        "subj:",
+        "msg:",
+        this.message
+      );
       Email.send({
         SecureToken: "db03cdbd-940e-4cd9-ab60-8b5cb816888e",
         To: "ruhiambelkar7@gmail.com",
         From: this.email,
-        name:this.name,
-        Subject:this.subject,
+        name: this.name,
+
         Body: this.message,
       }).then((message) => alert(message));
     },
@@ -37,10 +44,7 @@ export default {
           <label for="name" class="form-label">Name</label>
           <input type="text" id="name" class="form-control" v-model="name" />
         </div>
-        <div class="mb-3">
-          <label for="subject" class="form-label">Subject</label>
-          <input type="text" id="subject" class="form-control" v-model="subject" />
-        </div>
+
         <div class="mb-3">
           <label for="email" class="form-label">Email</label>
           <input type="email" id="email" class="form-control" v-model="email" />
@@ -50,7 +54,12 @@ export default {
           <textarea rows="4" id="name" class="form-control" v-model="message" />
         </div>
         <div class="d-flex justify-content-center mt-4">
-          <input class="btn btn-primary" type="button" value="Submit" @click="sendMail()" />
+          <input
+            class="btn btn-primary"
+            type="button"
+            value="Submit"
+            @click="sendMail()"
+          />
         </div>
       </form>
     </div>
@@ -58,11 +67,15 @@ export default {
 </template>
 <style scoped>
 #contact-heading {
-  background: -webkit-linear-gradient(141deg, rgba(2,0,36,1) 0%, rgba(4,46,49,1) 25%, rgba(0,212,255,1) 100%);
+  background: -webkit-linear-gradient(
+    141deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(4, 46, 49, 1) 25%,
+    rgba(0, 212, 255, 1) 100%
+  );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-
 
 form {
   color: rgb(4, 46, 49);
