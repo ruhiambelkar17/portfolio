@@ -12,16 +12,6 @@ export default {
   },
   methods: {
     sendMail() {
-      console.log(
-        "email:",
-        this.email,
-        "Name:",
-        this.name,
-        "subj:",
-        "msg:",
-        this.message
-      );
-
       emailjs
         .sendForm(
           "service_qa87qk5",
