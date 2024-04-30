@@ -1,5 +1,6 @@
 <script>
-import Email from "@/assets/smtp/smtp.js";
+//import Email from "@/assets/smtp/smtp.js";
+import emailjs from "emailjs-com";
 
 export default {
   data() {
@@ -20,14 +21,25 @@ export default {
         "msg:",
         this.message
       );
-      Email.send({
-        SecureToken: "db03cdbd-940e-4cd9-ab60-8b5cb816888e",
-        To: "ruhiambelkar7@gmail.com",
-        From: this.email,
-        name: this.name,
+      // Email.send({
+      //   SecureToken: "db03cdbd-940e-4cd9-ab60-8b5cb816888e",
+      //   To: "ruhiambelkar7@gmail.com",
+      //   From: this.email,
+      //   name: this.name,
 
-        Body: this.message,
-      }).then((message) => alert(message));
+      //   Body: this.message,
+      // }).then((message) => alert(message));
+      emailjs.sendForm(
+        "service_qa87qk5",
+        "template_jgabish",
+        "wYsUv-8XAeSmUfOs5",
+        {
+          message: this.message,
+          name: this.name,
+          mail: this.mail,
+        }
+        
+      );
     },
   },
 };
@@ -39,7 +51,7 @@ export default {
       <div id="contact-heading">
         <h1 class="display-1 text-center">Contact Me</h1>
       </div>
-      <form class="border rounded p-5 shadow">
+      <form class="border rounded p-5 shadow" ref="form">
         <div class="mb-3">
           <label for="name" class="form-label">Name</label>
           <input type="text" id="name" class="form-control" v-model="name" />
