@@ -21,25 +21,31 @@ export default {
         "msg:",
         this.message
       );
-      // Email.send({
-      //   SecureToken: "db03cdbd-940e-4cd9-ab60-8b5cb816888e",
-      //   To: "ruhiambelkar7@gmail.com",
-      //   From: this.email,
-      //   name: this.name,
-
-      //   Body: this.message,
-      // }).then((message) => alert(message));
-      emailjs.sendForm(
-        "service_qa87qk5",
-        "template_jgabish",
-        "wYsUv-8XAeSmUfOs5",
-        {
-          message: this.message,
-          name: this.name,
-          mail: this.mail,
-        }
+     
+      // emailjs.sendForm(
+      //   "service_qa87qk5",
+      //   "template_jgabish",
         
-      );
+      //   // {
+      //   //   message: this.message,
+      //   //   name: this.name,
+      //   //   mail: this.mail,
+      //   // },
+      //   this.$refs.form,
+      //   // {
+      //   //   publicKey: 'YOUR_PUBLIC_KEY',
+      //   // }
+        
+      // );
+
+      emailjs.sendForm('service_qa87qk5', 'template_jgabish', this.$refs.form,"wYsUv-8XAeSmUfOs5").then(
+  (response) => {
+    console.log('SUCCESS!', response.status, response.text);
+  },
+  (error) => {
+    console.log('FAILED...', error);
+  },
+);
     },
   },
 };
@@ -51,27 +57,23 @@ export default {
       <div id="contact-heading">
         <h1 class="display-1 text-center">Contact Me</h1>
       </div>
-      <form class="border rounded p-5 shadow" ref="form">
+      <form class="border rounded p-5 shadow" ref="form" @submit.prevent="sendMail">
         <div class="mb-3">
           <label for="name" class="form-label">Name</label>
-          <input type="text" id="name" class="form-control" v-model="name" />
+          <input type="text" id="name" class="form-control" v-model="name" name="name" />
         </div>
 
         <div class="mb-3">
           <label for="email" class="form-label">Email</label>
-          <input type="email" id="email" class="form-control" v-model="email" />
+          <input type="email" id="email" class="form-control" v-model="email" name="email" />
         </div>
         <div class="mb-3">
-          <label for="name" class="form-label">Messase</label>
-          <textarea rows="4" id="name" class="form-control" v-model="message" />
+          <label for="message" class="form-label">Messase</label>
+          <textarea rows="4" id="message" class="form-control" v-model="message" name="message" />
         </div>
         <div class="d-flex justify-content-center mt-4">
-          <input
-            class="btn btn-primary"
-            type="button"
-            value="Submit"
-            @click="sendMail()"
-          />
+          <input type="submit" class="btn btn-primary" value="Send">
+          
         </div>
       </form>
     </div>
