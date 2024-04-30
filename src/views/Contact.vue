@@ -21,31 +21,22 @@ export default {
         "msg:",
         this.message
       );
-     
-      // emailjs.sendForm(
-      //   "service_qa87qk5",
-      //   "template_jgabish",
-        
-      //   // {
-      //   //   message: this.message,
-      //   //   name: this.name,
-      //   //   mail: this.mail,
-      //   // },
-      //   this.$refs.form,
-      //   // {
-      //   //   publicKey: 'YOUR_PUBLIC_KEY',
-      //   // }
-        
-      // );
 
-      emailjs.sendForm('service_qa87qk5', 'template_jgabish', this.$refs.form,"wYsUv-8XAeSmUfOs5").then(
-  (response) => {
-    console.log('SUCCESS!', response.status, response.text);
-  },
-  (error) => {
-    console.log('FAILED...', error);
-  },
-);
+      emailjs
+        .sendForm(
+          "service_qa87qk5",
+          "template_jgabish",
+          this.$refs.form,
+          "wYsUv-8XAeSmUfOs5"
+        )
+        .then(
+          (response) => {
+            console.log("SUCCESS!", response.status, response.text);
+          },
+          (error) => {
+            console.log("FAILED...", error);
+          }
+        );
     },
   },
 };
@@ -57,23 +48,44 @@ export default {
       <div id="contact-heading">
         <h1 class="display-1 text-center">Contact Me</h1>
       </div>
-      <form class="border rounded p-5 shadow" ref="form" @submit.prevent="sendMail">
+      <form
+        class="border rounded p-5 shadow"
+        ref="form"
+        @submit.prevent="sendMail"
+      >
         <div class="mb-3">
           <label for="name" class="form-label">Name</label>
-          <input type="text" id="name" class="form-control" v-model="name" name="name" />
+          <input
+            type="text"
+            id="name"
+            class="form-control"
+            v-model="name"
+            name="name"
+          />
         </div>
 
         <div class="mb-3">
           <label for="email" class="form-label">Email</label>
-          <input type="email" id="email" class="form-control" v-model="email" name="email" />
+          <input
+            type="email"
+            id="email"
+            class="form-control"
+            v-model="email"
+            name="email"
+          />
         </div>
         <div class="mb-3">
           <label for="message" class="form-label">Messase</label>
-          <textarea rows="4" id="message" class="form-control" v-model="message" name="message" />
+          <textarea
+            rows="4"
+            id="message"
+            class="form-control"
+            v-model="message"
+            name="message"
+          />
         </div>
         <div class="d-flex justify-content-center mt-4">
-          <input type="submit" class="btn btn-primary" value="Send">
-          
+          <input type="submit" class="btn btn-primary" value="Send" />
         </div>
       </form>
     </div>
